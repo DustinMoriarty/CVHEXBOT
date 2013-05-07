@@ -1,0 +1,11 @@
+<RCC>
+    <qresource lang="png" prefix="/new/icons">
+        <file>forwardarrow.png</file>
+        <file>backwardarrow.png</file>
+        <file>leftwarrow.png</file>
+        <file>rightarrow.png</file>
+        <file>rotatecw.png</file>
+        <file>rotateccw.png</file>
+        <file>off.png</file>
+    </qresource>
+</RCC>

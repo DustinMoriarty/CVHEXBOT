@@ -1,0 +1,8 @@
+<RCC>
+    <qresource lang="Python" prefix="/new/Python">
+        <file>hexyvision2.py</file>
+        <file>config.cfg</file>
+        <file>PoMoCo/servotorComm.py</file>
+        <file>PoMoCo/robot.py</file>
+    </qresource>
+</RCC>
