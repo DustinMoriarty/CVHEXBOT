@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'machine.h'
 **
-** Created: Tue May 7 01:08:58 2013
+** Created: Tue May 7 08:51:41 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!

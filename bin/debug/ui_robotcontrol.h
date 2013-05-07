@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'robotcontrol.ui'
 **
-** Created: Tue May 7 01:08:47 2013
+** Created: Tue May 7 08:51:27 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -44,6 +44,13 @@ public:
     QAction *action_Close;
     QAction *action_Exit;
     QWidget *centralWidget;
+    QWidget *widget;
+    QGridLayout *gridLayout_6;
+    QHBoxLayout *horizontalLayout_2;
+    QPushButton *btnConnect;
+    QPushButton *btnTrack;
+    QPushButton *btnVision;
+    QPushButton *btnkillall;
     QTabWidget *tabWidget;
     QWidget *tabMotionCntrl;
     QScrollArea *scrollArea;
@@ -92,18 +99,23 @@ public:
     QLabel *label_4;
     QSpinBox *spinBoxHMAX;
     QSpinBox *spinBoxSMAX;
-    QSpinBox *spinBoxSMIN;
-    QLabel *label_5;
     QLabel *label_3;
+    QLabel *label_5;
+    QSpinBox *spinBoxSMIN;
     QLabel *label_2;
     QSpinBox *spinBoxVMIN;
-    QSpinBox *spinBoxVMAX;
     QSpinBox *spinBoxHMIN;
+    QSpinBox *spinBoxVMAX;
     QSlider *sldSmin;
     QSlider *sldHmin;
     QSlider *sldSmax;
     QSlider *sldHmax;
     QSlider *sldvmax;
+    QWidget *widget1;
+    QGridLayout *gridLayout_5;
+    QLabel *label_13;
+    QSlider *sldvNoise;
+    QSpinBox *spinBoxNoise;
     QWidget *tabPID;
     QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout;
@@ -119,12 +131,6 @@ public:
     QLineEdit *lineEditTermCommand;
     QLabel *label_9;
     QCheckBox *ckbxPrepend;
-    QWidget *layoutWidget2;
-    QHBoxLayout *horizontalLayout_2;
-    QPushButton *btnConnect;
-    QPushButton *btnTrack;
-    QPushButton *btnVision;
-    QPushButton *btnkillall;
     QMenuBar *menuBar;
     QMenu *menu_File;
     QToolBar *mainToolBar;
@@ -135,7 +141,7 @@ public:
     {
         if (robotcontrol->objectName().isEmpty())
             robotcontrol->setObjectName(QString::fromUtf8("robotcontrol"));
-        robotcontrol->resize(660, 435);
+        robotcontrol->resize(692, 435);
         robotcontrol->setWindowOpacity(1);
         action_Save = new QAction(robotcontrol);
         action_Save->setObjectName(QString::fromUtf8("action_Save"));
@@ -147,9 +153,109 @@ public:
         action_Exit->setObjectName(QString::fromUtf8("action_Exit"));
         centralWidget = new QWidget(robotcontrol);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
-        tabWidget = new QTabWidget(centralWidget);
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(20, 0, 661, 361));
+        gridLayout_6 = new QGridLayout(widget);
+        gridLayout_6->setSpacing(6);
+        gridLayout_6->setContentsMargins(11, 11, 11, 11);
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
+        gridLayout_6->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        btnConnect = new QPushButton(widget);
+        btnConnect->setObjectName(QString::fromUtf8("btnConnect"));
+        QPalette palette;
+        QBrush brush(QColor(0, 0, 0, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        QBrush brush1(QColor(85, 255, 0, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
+        QBrush brush2(QColor(170, 255, 127, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Light, brush2);
+        QBrush brush3(QColor(127, 255, 63, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Midlight, brush3);
+        QBrush brush4(QColor(42, 127, 0, 255));
+        brush4.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Dark, brush4);
+        QBrush brush5(QColor(56, 170, 0, 255));
+        brush5.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Active, QPalette::Text, brush);
+        QBrush brush6(QColor(255, 255, 255, 255));
+        brush6.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush6);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Active, QPalette::AlternateBase, brush2);
+        QBrush brush7(QColor(255, 255, 220, 255));
+        brush7.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipBase, brush7);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Inactive, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Inactive, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Inactive, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush6);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush2);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush7);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Disabled, QPalette::Text, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush7);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
+        btnConnect->setPalette(palette);
+
+        horizontalLayout_2->addWidget(btnConnect);
+
+        btnTrack = new QPushButton(widget);
+        btnTrack->setObjectName(QString::fromUtf8("btnTrack"));
+
+        horizontalLayout_2->addWidget(btnTrack);
+
+        btnVision = new QPushButton(widget);
+        btnVision->setObjectName(QString::fromUtf8("btnVision"));
+
+        horizontalLayout_2->addWidget(btnVision);
+
+
+        gridLayout_6->addLayout(horizontalLayout_2, 0, 0, 1, 1);
+
+        btnkillall = new QPushButton(widget);
+        btnkillall->setObjectName(QString::fromUtf8("btnkillall"));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/new/icons/off.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnkillall->setIcon(icon);
+        btnkillall->setIconSize(QSize(64, 64));
+
+        gridLayout_6->addWidget(btnkillall, 0, 1, 1, 1);
+
+        tabWidget = new QTabWidget(widget);
         tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(20, 80, 611, 291));
         tabWidget->setTabShape(QTabWidget::Rounded);
         tabMotionCntrl = new QWidget();
         tabMotionCntrl->setObjectName(QString::fromUtf8("tabMotionCntrl"));
@@ -221,9 +327,9 @@ public:
 
         btncwNeck = new QPushButton(layoutWidget);
         btncwNeck->setObjectName(QString::fromUtf8("btncwNeck"));
-        QIcon icon;
-        icon.addFile(QString::fromUtf8(":/new/icons/rotatecw.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btncwNeck->setIcon(icon);
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/new/icons/rotatecw.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btncwNeck->setIcon(icon1);
         btncwNeck->setIconSize(QSize(32, 32));
 
         gridLayout_4->addWidget(btncwNeck, 0, 4, 1, 1);
@@ -234,7 +340,7 @@ public:
 
         btncw = new QPushButton(layoutWidget);
         btncw->setObjectName(QString::fromUtf8("btncw"));
-        btncw->setIcon(icon);
+        btncw->setIcon(icon1);
         btncw->setIconSize(QSize(32, 32));
 
         gridLayout_4->addWidget(btncw, 2, 4, 1, 1);
@@ -259,9 +365,9 @@ public:
 
         btnccwNeck = new QPushButton(layoutWidget);
         btnccwNeck->setObjectName(QString::fromUtf8("btnccwNeck"));
-        QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/new/icons/rotateccw.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnccwNeck->setIcon(icon1);
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/new/icons/rotateccw.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnccwNeck->setIcon(icon2);
         btnccwNeck->setIconSize(QSize(32, 32));
 
         gridLayout_4->addWidget(btnccwNeck, 0, 2, 1, 1);
@@ -272,9 +378,9 @@ public:
 
         btnfwd = new QPushButton(layoutWidget);
         btnfwd->setObjectName(QString::fromUtf8("btnfwd"));
-        QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/new/icons/forwardarrow.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnfwd->setIcon(icon2);
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/new/icons/forwardarrow.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnfwd->setIcon(icon3);
         btnfwd->setIconSize(QSize(32, 32));
 
         gridLayout_4->addWidget(btnfwd, 4, 3, 1, 1);
@@ -295,16 +401,16 @@ public:
 
         btnrev = new QPushButton(layoutWidget);
         btnrev->setObjectName(QString::fromUtf8("btnrev"));
-        QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/new/icons/backwardarrow.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnrev->setIcon(icon3);
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/new/icons/backwardarrow.png"), QSize(), QIcon::Normal, QIcon::Off);
+        btnrev->setIcon(icon4);
         btnrev->setIconSize(QSize(32, 32));
 
         gridLayout_4->addWidget(btnrev, 5, 3, 1, 1);
 
         btnccw = new QPushButton(layoutWidget);
         btnccw->setObjectName(QString::fromUtf8("btnccw"));
-        btnccw->setIcon(icon1);
+        btnccw->setIcon(icon2);
         btnccw->setIconSize(QSize(32, 32));
 
         gridLayout_4->addWidget(btnccw, 2, 2, 1, 1);
@@ -386,22 +492,22 @@ public:
 
         gridLayout->addWidget(spinBoxSMAX, 2, 4, 1, 1);
 
-        spinBoxSMIN = new QSpinBox(gridLayoutWidget);
-        spinBoxSMIN->setObjectName(QString::fromUtf8("spinBoxSMIN"));
-        spinBoxSMIN->setMaximum(255);
-        spinBoxSMIN->setSingleStep(5);
+        label_3 = new QLabel(gridLayoutWidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
 
-        gridLayout->addWidget(spinBoxSMIN, 2, 2, 1, 1);
+        gridLayout->addWidget(label_3, 0, 4, 1, 1);
 
         label_5 = new QLabel(gridLayoutWidget);
         label_5->setObjectName(QString::fromUtf8("label_5"));
 
         gridLayout->addWidget(label_5, 3, 0, 1, 1);
 
-        label_3 = new QLabel(gridLayoutWidget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        spinBoxSMIN = new QSpinBox(gridLayoutWidget);
+        spinBoxSMIN->setObjectName(QString::fromUtf8("spinBoxSMIN"));
+        spinBoxSMIN->setMaximum(255);
+        spinBoxSMIN->setSingleStep(5);
 
-        gridLayout->addWidget(label_3, 0, 4, 1, 1);
+        gridLayout->addWidget(spinBoxSMIN, 2, 2, 1, 1);
 
         label_2 = new QLabel(gridLayoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
@@ -414,6 +520,13 @@ public:
 
         gridLayout->addWidget(spinBoxVMIN, 3, 2, 1, 1);
 
+        spinBoxHMIN = new QSpinBox(gridLayoutWidget);
+        spinBoxHMIN->setObjectName(QString::fromUtf8("spinBoxHMIN"));
+        spinBoxHMIN->setMaximum(255);
+        spinBoxHMIN->setSingleStep(5);
+
+        gridLayout->addWidget(spinBoxHMIN, 1, 2, 1, 1);
+
         spinBoxVMAX = new QSpinBox(gridLayoutWidget);
         spinBoxVMAX->setObjectName(QString::fromUtf8("spinBoxVMAX"));
         spinBoxVMAX->setMinimum(0);
@@ -422,13 +535,6 @@ public:
         spinBoxVMAX->setValue(255);
 
         gridLayout->addWidget(spinBoxVMAX, 3, 4, 1, 1);
-
-        spinBoxHMIN = new QSpinBox(gridLayoutWidget);
-        spinBoxHMIN->setObjectName(QString::fromUtf8("spinBoxHMIN"));
-        spinBoxHMIN->setMaximum(255);
-        spinBoxHMIN->setSingleStep(5);
-
-        gridLayout->addWidget(spinBoxHMIN, 1, 2, 1, 1);
 
         sldSmin = new QSlider(gridLayoutWidget);
         sldSmin->setObjectName(QString::fromUtf8("sldSmin"));
@@ -468,6 +574,36 @@ public:
 
         gridLayout->addWidget(sldvmax, 3, 3, 1, 1);
 
+        widget1 = new QWidget(tab);
+        widget1->setObjectName(QString::fromUtf8("widget1"));
+        widget1->setGeometry(QRect(100, 189, 361, 31));
+        gridLayout_5 = new QGridLayout(widget1);
+        gridLayout_5->setSpacing(6);
+        gridLayout_5->setContentsMargins(11, 11, 11, 11);
+        gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
+        gridLayout_5->setContentsMargins(0, 0, 0, 0);
+        label_13 = new QLabel(widget1);
+        label_13->setObjectName(QString::fromUtf8("label_13"));
+
+        gridLayout_5->addWidget(label_13, 0, 0, 1, 1);
+
+        sldvNoise = new QSlider(widget1);
+        sldvNoise->setObjectName(QString::fromUtf8("sldvNoise"));
+        sldvNoise->setMaximum(255);
+        sldvNoise->setSliderPosition(255);
+        sldvNoise->setOrientation(Qt::Horizontal);
+
+        gridLayout_5->addWidget(sldvNoise, 0, 1, 1, 1);
+
+        spinBoxNoise = new QSpinBox(widget1);
+        spinBoxNoise->setObjectName(QString::fromUtf8("spinBoxNoise"));
+        spinBoxNoise->setMinimum(0);
+        spinBoxNoise->setMaximum(1);
+        spinBoxNoise->setSingleStep(5);
+        spinBoxNoise->setValue(1);
+
+        gridLayout_5->addWidget(spinBoxNoise, 0, 2, 1, 1);
+
         tabWidget->addTab(tab, QString());
         tabPID = new QWidget();
         tabPID->setObjectName(QString::fromUtf8("tabPID"));
@@ -489,7 +625,7 @@ public:
 
         doubleSpinBoxCP = new QDoubleSpinBox(layoutWidget1);
         doubleSpinBoxCP->setObjectName(QString::fromUtf8("doubleSpinBoxCP"));
-        doubleSpinBoxCP->setDecimals(4);
+        doubleSpinBoxCP->setDecimals(10);
         doubleSpinBoxCP->setMinimum(-10);
         doubleSpinBoxCP->setSingleStep(0.05);
         doubleSpinBoxCP->setValue(0.05);
@@ -498,14 +634,15 @@ public:
 
         doubleSpinBoxCI = new QDoubleSpinBox(layoutWidget1);
         doubleSpinBoxCI->setObjectName(QString::fromUtf8("doubleSpinBoxCI"));
-        doubleSpinBoxCI->setDecimals(4);
-        doubleSpinBoxCI->setMinimum(-10);
+        doubleSpinBoxCI->setDecimals(10);
+        doubleSpinBoxCI->setMinimum(-1000);
+        doubleSpinBoxCI->setMaximum(1000);
 
         gridLayout_2->addWidget(doubleSpinBoxCI, 1, 1, 1, 1);
 
         doubleSpinBoxCD = new QDoubleSpinBox(layoutWidget1);
         doubleSpinBoxCD->setObjectName(QString::fromUtf8("doubleSpinBoxCD"));
-        doubleSpinBoxCD->setDecimals(4);
+        doubleSpinBoxCD->setDecimals(10);
         doubleSpinBoxCD->setMinimum(-10);
 
         gridLayout_2->addWidget(doubleSpinBoxCD, 2, 1, 1, 1);
@@ -540,103 +677,13 @@ public:
         ckbxPrepend->setObjectName(QString::fromUtf8("ckbxPrepend"));
         ckbxPrepend->setGeometry(QRect(60, 60, 181, 51));
         tabWidget->addTab(tabConnection, QString());
-        layoutWidget2 = new QWidget(centralWidget);
-        layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
-        layoutWidget2->setGeometry(QRect(20, 0, 269, 29));
-        horizontalLayout_2 = new QHBoxLayout(layoutWidget2);
-        horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        btnConnect = new QPushButton(layoutWidget2);
-        btnConnect->setObjectName(QString::fromUtf8("btnConnect"));
-        QPalette palette;
-        QBrush brush(QColor(0, 0, 0, 255));
-        brush.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
-        QBrush brush1(QColor(85, 255, 0, 255));
-        brush1.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
-        QBrush brush2(QColor(170, 255, 127, 255));
-        brush2.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Light, brush2);
-        QBrush brush3(QColor(127, 255, 63, 255));
-        brush3.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Midlight, brush3);
-        QBrush brush4(QColor(42, 127, 0, 255));
-        brush4.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Dark, brush4);
-        QBrush brush5(QColor(56, 170, 0, 255));
-        brush5.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::Mid, brush5);
-        palette.setBrush(QPalette::Active, QPalette::Text, brush);
-        QBrush brush6(QColor(255, 255, 255, 255));
-        brush6.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::BrightText, brush6);
-        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
-        palette.setBrush(QPalette::Active, QPalette::Base, brush6);
-        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
-        palette.setBrush(QPalette::Active, QPalette::Shadow, brush);
-        palette.setBrush(QPalette::Active, QPalette::AlternateBase, brush2);
-        QBrush brush7(QColor(255, 255, 220, 255));
-        brush7.setStyle(Qt::SolidPattern);
-        palette.setBrush(QPalette::Active, QPalette::ToolTipBase, brush7);
-        palette.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Button, brush1);
-        palette.setBrush(QPalette::Inactive, QPalette::Light, brush2);
-        palette.setBrush(QPalette::Inactive, QPalette::Midlight, brush3);
-        palette.setBrush(QPalette::Inactive, QPalette::Dark, brush4);
-        palette.setBrush(QPalette::Inactive, QPalette::Mid, brush5);
-        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
-        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::Base, brush6);
-        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
-        palette.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
-        palette.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush2);
-        palette.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush7);
-        palette.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
-        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Light, brush2);
-        palette.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
-        palette.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
-        palette.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
-        palette.setBrush(QPalette::Disabled, QPalette::Text, brush4);
-        palette.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
-        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
-        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
-        palette.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
-        palette.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush7);
-        palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        btnConnect->setPalette(palette);
 
-        horizontalLayout_2->addWidget(btnConnect);
+        gridLayout_6->addWidget(tabWidget, 1, 0, 1, 2);
 
-        btnTrack = new QPushButton(layoutWidget2);
-        btnTrack->setObjectName(QString::fromUtf8("btnTrack"));
-
-        horizontalLayout_2->addWidget(btnTrack);
-
-        btnVision = new QPushButton(layoutWidget2);
-        btnVision->setObjectName(QString::fromUtf8("btnVision"));
-
-        horizontalLayout_2->addWidget(btnVision);
-
-        btnkillall = new QPushButton(centralWidget);
-        btnkillall->setObjectName(QString::fromUtf8("btnkillall"));
-        btnkillall->setGeometry(QRect(450, 0, 161, 71));
-        QIcon icon4;
-        icon4.addFile(QString::fromUtf8(":/new/icons/off.png"), QSize(), QIcon::Normal, QIcon::Off);
-        btnkillall->setIcon(icon4);
-        btnkillall->setIconSize(QSize(64, 64));
         robotcontrol->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(robotcontrol);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 660, 25));
+        menuBar->setGeometry(QRect(0, 0, 692, 25));
         menu_File = new QMenu(menuBar);
         menu_File->setObjectName(QString::fromUtf8("menu_File"));
         robotcontrol->setMenuBar(menuBar);
@@ -670,8 +717,10 @@ public:
         QObject::connect(spinBoxSMAX, SIGNAL(valueChanged(int)), spinBoxSMAX, SLOT(setValue(int)));
         QObject::connect(spinBoxHMAX, SIGNAL(valueChanged(int)), sldHmax, SLOT(setValue(int)));
         QObject::connect(sldSmax, SIGNAL(valueChanged(int)), spinBoxSMAX, SLOT(setValue(int)));
+        QObject::connect(sldvNoise, SIGNAL(sliderMoved(int)), spinBoxNoise, SLOT(setValue(int)));
+        QObject::connect(spinBoxNoise, SIGNAL(valueChanged(int)), sldvNoise, SLOT(setValue(int)));
 
-        tabWidget->setCurrentIndex(3);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(robotcontrol);
@@ -684,6 +733,10 @@ public:
         action_Open->setText(QApplication::translate("robotcontrol", "&Open", 0, QApplication::UnicodeUTF8));
         action_Close->setText(QApplication::translate("robotcontrol", "&Close", 0, QApplication::UnicodeUTF8));
         action_Exit->setText(QApplication::translate("robotcontrol", "&Exit", 0, QApplication::UnicodeUTF8));
+        btnConnect->setText(QApplication::translate("robotcontrol", "Connect", 0, QApplication::UnicodeUTF8));
+        btnTrack->setText(QApplication::translate("robotcontrol", "Track", 0, QApplication::UnicodeUTF8));
+        btnVision->setText(QApplication::translate("robotcontrol", "Vision", 0, QApplication::UnicodeUTF8));
+        btnkillall->setText(QApplication::translate("robotcontrol", "E-BRAKE", 0, QApplication::UnicodeUTF8));
         btnDance->setText(QApplication::translate("robotcontrol", "Dance", 0, QApplication::UnicodeUTF8));
         btnWave->setText(QApplication::translate("robotcontrol", "Wave", 0, QApplication::UnicodeUTF8));
         btnTiltLeft->setText(QApplication::translate("robotcontrol", "Tilt Left", 0, QApplication::UnicodeUTF8));
@@ -703,9 +756,10 @@ public:
         tabWidget->setTabText(tabWidget->indexOf(tabVision), QApplication::translate("robotcontrol", "Vision", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("robotcontrol", "H ", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("robotcontrol", "S ", 0, QApplication::UnicodeUTF8));
-        label_5->setText(QApplication::translate("robotcontrol", "V", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("robotcontrol", "Max", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("robotcontrol", "V", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("robotcontrol", "Min", 0, QApplication::UnicodeUTF8));
+        label_13->setText(QApplication::translate("robotcontrol", "Noise Cut Off", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("robotcontrol", "Threashold", 0, QApplication::UnicodeUTF8));
         label_7->setText(QApplication::translate("robotcontrol", "CI", 0, QApplication::UnicodeUTF8));
         label_6->setText(QApplication::translate("robotcontrol", "CP", 0, QApplication::UnicodeUTF8));
@@ -718,10 +772,6 @@ public:
 "Command To Python \n"
 "Connection", 0, QApplication::UnicodeUTF8));
         tabWidget->setTabText(tabWidget->indexOf(tabConnection), QApplication::translate("robotcontrol", "Connection", 0, QApplication::UnicodeUTF8));
-        btnConnect->setText(QApplication::translate("robotcontrol", "Connect", 0, QApplication::UnicodeUTF8));
-        btnTrack->setText(QApplication::translate("robotcontrol", "Track", 0, QApplication::UnicodeUTF8));
-        btnVision->setText(QApplication::translate("robotcontrol", "Vision", 0, QApplication::UnicodeUTF8));
-        btnkillall->setText(QApplication::translate("robotcontrol", "E-BRAKE", 0, QApplication::UnicodeUTF8));
         menu_File->setTitle(QApplication::translate("robotcontrol", "&File", 0, QApplication::UnicodeUTF8));
         mainToolBar->setWindowTitle(QApplication::translate("robotcontrol", "QT Robot Control", 0, QApplication::UnicodeUTF8));
         toolBar->setWindowTitle(QApplication::translate("robotcontrol", "toolBar", 0, QApplication::UnicodeUTF8));
