@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'robotcontrol.h'
 **
-** Created: Tue May 7 21:48:15 2013
+** Created: Wed May 8 02:46:07 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_robotcontrol[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      51,   14, // methods
+      53,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -82,6 +82,8 @@ static const uint qt_meta_data_robotcontrol[] = {
     1281, 1274,   13,   13, 0x08,
     1313,  854,   13,   13, 0x08,
     1345,  854,   13,   13, 0x08,
+    1394, 1388,   13,   13, 0x08,
+    1440, 1388,   13,   13, 0x08,
 
        0        // eod
 };
@@ -127,6 +129,8 @@ static const char qt_meta_stringdata_robotcontrol[] = {
     "action\0on_sldHmin_actionTriggered(int)\0"
     "on_spinBoxCam_valueChanged(int)\0"
     "on_doubleSpinBoxNoise_valueChanged(double)\0"
+    "index\0on_comboBoxTrackType_currentIndexChanged(int)\0"
+    "on_comboBoxTrackType_activated(int)\0"
 };
 
 void robotcontrol::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -186,6 +190,8 @@ void robotcontrol::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 48: _t->on_sldHmin_actionTriggered((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 49: _t->on_spinBoxCam_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 50: _t->on_doubleSpinBoxNoise_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 51: _t->on_comboBoxTrackType_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 52: _t->on_comboBoxTrackType_activated((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -223,9 +229,9 @@ int robotcontrol::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 51)
+        if (_id < 53)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 51;
+        _id -= 53;
     }
     return _id;
 }
