@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'robotcontrol.ui'
 **
-** Created: Tue May 7 08:51:27 2013
+** Created: Tue May 7 21:20:43 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -92,7 +92,8 @@ public:
     QSpinBox *spinBoxCam;
     QLabel *label_10;
     QWidget *tab;
-    QWidget *gridLayoutWidget;
+    QWidget *widget1;
+    QGridLayout *gridLayout_7;
     QGridLayout *gridLayout;
     QSlider *SldVmin;
     QLabel *label;
@@ -111,11 +112,10 @@ public:
     QSlider *sldSmax;
     QSlider *sldHmax;
     QSlider *sldvmax;
-    QWidget *widget1;
     QGridLayout *gridLayout_5;
+    QSpacerItem *horizontalSpacer_15;
     QLabel *label_13;
-    QSlider *sldvNoise;
-    QSpinBox *spinBoxNoise;
+    QDoubleSpinBox *doubleSpinBoxNoise;
     QWidget *tabPID;
     QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout;
@@ -451,32 +451,36 @@ public:
         tabWidget->addTab(tabVision, QString());
         tab = new QWidget();
         tab->setObjectName(QString::fromUtf8("tab"));
-        gridLayoutWidget = new QWidget(tab);
-        gridLayoutWidget->setObjectName(QString::fromUtf8("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(10, 20, 571, 141));
-        gridLayout = new QGridLayout(gridLayoutWidget);
+        widget1 = new QWidget(tab);
+        widget1->setObjectName(QString::fromUtf8("widget1"));
+        widget1->setGeometry(QRect(20, 20, 601, 211));
+        gridLayout_7 = new QGridLayout(widget1);
+        gridLayout_7->setSpacing(6);
+        gridLayout_7->setContentsMargins(11, 11, 11, 11);
+        gridLayout_7->setObjectName(QString::fromUtf8("gridLayout_7"));
+        gridLayout_7->setContentsMargins(0, 0, 0, 0);
+        gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
-        gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        gridLayout->setContentsMargins(0, 0, 0, 0);
-        SldVmin = new QSlider(gridLayoutWidget);
+        gridLayout->setContentsMargins(-1, -1, 0, -1);
+        SldVmin = new QSlider(widget1);
         SldVmin->setObjectName(QString::fromUtf8("SldVmin"));
         SldVmin->setMaximum(255);
         SldVmin->setOrientation(Qt::Horizontal);
 
         gridLayout->addWidget(SldVmin, 3, 1, 1, 1);
 
-        label = new QLabel(gridLayoutWidget);
+        label = new QLabel(widget1);
         label->setObjectName(QString::fromUtf8("label"));
 
         gridLayout->addWidget(label, 1, 0, 1, 1);
 
-        label_4 = new QLabel(gridLayoutWidget);
+        label_4 = new QLabel(widget1);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
         gridLayout->addWidget(label_4, 2, 0, 1, 1);
 
-        spinBoxHMAX = new QSpinBox(gridLayoutWidget);
+        spinBoxHMAX = new QSpinBox(widget1);
         spinBoxHMAX->setObjectName(QString::fromUtf8("spinBoxHMAX"));
         spinBoxHMAX->setMaximum(255);
         spinBoxHMAX->setSingleStep(5);
@@ -484,7 +488,7 @@ public:
 
         gridLayout->addWidget(spinBoxHMAX, 1, 4, 1, 1);
 
-        spinBoxSMAX = new QSpinBox(gridLayoutWidget);
+        spinBoxSMAX = new QSpinBox(widget1);
         spinBoxSMAX->setObjectName(QString::fromUtf8("spinBoxSMAX"));
         spinBoxSMAX->setMaximum(255);
         spinBoxSMAX->setSingleStep(5);
@@ -492,42 +496,42 @@ public:
 
         gridLayout->addWidget(spinBoxSMAX, 2, 4, 1, 1);
 
-        label_3 = new QLabel(gridLayoutWidget);
+        label_3 = new QLabel(widget1);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         gridLayout->addWidget(label_3, 0, 4, 1, 1);
 
-        label_5 = new QLabel(gridLayoutWidget);
+        label_5 = new QLabel(widget1);
         label_5->setObjectName(QString::fromUtf8("label_5"));
 
         gridLayout->addWidget(label_5, 3, 0, 1, 1);
 
-        spinBoxSMIN = new QSpinBox(gridLayoutWidget);
+        spinBoxSMIN = new QSpinBox(widget1);
         spinBoxSMIN->setObjectName(QString::fromUtf8("spinBoxSMIN"));
         spinBoxSMIN->setMaximum(255);
         spinBoxSMIN->setSingleStep(5);
 
         gridLayout->addWidget(spinBoxSMIN, 2, 2, 1, 1);
 
-        label_2 = new QLabel(gridLayoutWidget);
+        label_2 = new QLabel(widget1);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         gridLayout->addWidget(label_2, 0, 2, 1, 1);
 
-        spinBoxVMIN = new QSpinBox(gridLayoutWidget);
+        spinBoxVMIN = new QSpinBox(widget1);
         spinBoxVMIN->setObjectName(QString::fromUtf8("spinBoxVMIN"));
         spinBoxVMIN->setMaximum(255);
 
         gridLayout->addWidget(spinBoxVMIN, 3, 2, 1, 1);
 
-        spinBoxHMIN = new QSpinBox(gridLayoutWidget);
+        spinBoxHMIN = new QSpinBox(widget1);
         spinBoxHMIN->setObjectName(QString::fromUtf8("spinBoxHMIN"));
         spinBoxHMIN->setMaximum(255);
         spinBoxHMIN->setSingleStep(5);
 
         gridLayout->addWidget(spinBoxHMIN, 1, 2, 1, 1);
 
-        spinBoxVMAX = new QSpinBox(gridLayoutWidget);
+        spinBoxVMAX = new QSpinBox(widget1);
         spinBoxVMAX->setObjectName(QString::fromUtf8("spinBoxVMAX"));
         spinBoxVMAX->setMinimum(0);
         spinBoxVMAX->setMaximum(255);
@@ -536,21 +540,21 @@ public:
 
         gridLayout->addWidget(spinBoxVMAX, 3, 4, 1, 1);
 
-        sldSmin = new QSlider(gridLayoutWidget);
+        sldSmin = new QSlider(widget1);
         sldSmin->setObjectName(QString::fromUtf8("sldSmin"));
         sldSmin->setMaximum(255);
         sldSmin->setOrientation(Qt::Horizontal);
 
         gridLayout->addWidget(sldSmin, 2, 1, 1, 1);
 
-        sldHmin = new QSlider(gridLayoutWidget);
+        sldHmin = new QSlider(widget1);
         sldHmin->setObjectName(QString::fromUtf8("sldHmin"));
         sldHmin->setMaximum(255);
         sldHmin->setOrientation(Qt::Horizontal);
 
         gridLayout->addWidget(sldHmin, 1, 1, 1, 1);
 
-        sldSmax = new QSlider(gridLayoutWidget);
+        sldSmax = new QSlider(widget1);
         sldSmax->setObjectName(QString::fromUtf8("sldSmax"));
         sldSmax->setMaximum(255);
         sldSmax->setSliderPosition(255);
@@ -558,7 +562,7 @@ public:
 
         gridLayout->addWidget(sldSmax, 2, 3, 1, 1);
 
-        sldHmax = new QSlider(gridLayoutWidget);
+        sldHmax = new QSlider(widget1);
         sldHmax->setObjectName(QString::fromUtf8("sldHmax"));
         sldHmax->setMaximum(255);
         sldHmax->setSliderPosition(255);
@@ -566,7 +570,7 @@ public:
 
         gridLayout->addWidget(sldHmax, 1, 3, 1, 1);
 
-        sldvmax = new QSlider(gridLayoutWidget);
+        sldvmax = new QSlider(widget1);
         sldvmax->setObjectName(QString::fromUtf8("sldvmax"));
         sldvmax->setMaximum(255);
         sldvmax->setSliderPosition(255);
@@ -574,35 +578,35 @@ public:
 
         gridLayout->addWidget(sldvmax, 3, 3, 1, 1);
 
-        widget1 = new QWidget(tab);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(100, 189, 361, 31));
-        gridLayout_5 = new QGridLayout(widget1);
+
+        gridLayout_7->addLayout(gridLayout, 0, 0, 1, 1);
+
+        gridLayout_5 = new QGridLayout();
         gridLayout_5->setSpacing(6);
-        gridLayout_5->setContentsMargins(11, 11, 11, 11);
         gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
-        gridLayout_5->setContentsMargins(0, 0, 0, 0);
+        horizontalSpacer_15 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_5->addItem(horizontalSpacer_15, 0, 2, 1, 1);
+
         label_13 = new QLabel(widget1);
         label_13->setObjectName(QString::fromUtf8("label_13"));
 
         gridLayout_5->addWidget(label_13, 0, 0, 1, 1);
 
-        sldvNoise = new QSlider(widget1);
-        sldvNoise->setObjectName(QString::fromUtf8("sldvNoise"));
-        sldvNoise->setMaximum(255);
-        sldvNoise->setSliderPosition(255);
-        sldvNoise->setOrientation(Qt::Horizontal);
+        doubleSpinBoxNoise = new QDoubleSpinBox(widget1);
+        doubleSpinBoxNoise->setObjectName(QString::fromUtf8("doubleSpinBoxNoise"));
+        doubleSpinBoxNoise->setDecimals(4);
+        doubleSpinBoxNoise->setMaximum(100);
+        doubleSpinBoxNoise->setSingleStep(0.01);
+        doubleSpinBoxNoise->setValue(1);
 
-        gridLayout_5->addWidget(sldvNoise, 0, 1, 1, 1);
+        gridLayout_5->addWidget(doubleSpinBoxNoise, 0, 1, 1, 1);
 
-        spinBoxNoise = new QSpinBox(widget1);
-        spinBoxNoise->setObjectName(QString::fromUtf8("spinBoxNoise"));
-        spinBoxNoise->setMinimum(0);
-        spinBoxNoise->setMaximum(1);
-        spinBoxNoise->setSingleStep(5);
-        spinBoxNoise->setValue(1);
+        gridLayout_5->setColumnStretch(0, 1);
+        gridLayout_5->setColumnStretch(1, 2);
+        gridLayout_5->setColumnStretch(2, 1);
 
-        gridLayout_5->addWidget(spinBoxNoise, 0, 2, 1, 1);
+        gridLayout_7->addLayout(gridLayout_5, 1, 0, 1, 1);
 
         tabWidget->addTab(tab, QString());
         tabPID = new QWidget();
@@ -717,8 +721,6 @@ public:
         QObject::connect(spinBoxSMAX, SIGNAL(valueChanged(int)), spinBoxSMAX, SLOT(setValue(int)));
         QObject::connect(spinBoxHMAX, SIGNAL(valueChanged(int)), sldHmax, SLOT(setValue(int)));
         QObject::connect(sldSmax, SIGNAL(valueChanged(int)), spinBoxSMAX, SLOT(setValue(int)));
-        QObject::connect(sldvNoise, SIGNAL(sliderMoved(int)), spinBoxNoise, SLOT(setValue(int)));
-        QObject::connect(spinBoxNoise, SIGNAL(valueChanged(int)), sldvNoise, SLOT(setValue(int)));
 
         tabWidget->setCurrentIndex(2);
 

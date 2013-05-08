@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'robotcontrol.h'
 **
-** Created: Tue May 7 08:51:39 2013
+** Created: Tue May 7 21:48:15 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -126,7 +126,7 @@ static const char qt_meta_stringdata_robotcontrol[] = {
     "on_lineEditTermCommand_editingFinished()\0"
     "action\0on_sldHmin_actionTriggered(int)\0"
     "on_spinBoxCam_valueChanged(int)\0"
-    "on_spinBoxNoise_valueChanged(int)\0"
+    "on_doubleSpinBoxNoise_valueChanged(double)\0"
 };
 
 void robotcontrol::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -185,7 +185,7 @@ void robotcontrol::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 47: _t->on_lineEditTermCommand_editingFinished(); break;
         case 48: _t->on_sldHmin_actionTriggered((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 49: _t->on_spinBoxCam_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 50: _t->on_spinBoxNoise_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 50: _t->on_doubleSpinBoxNoise_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
         default: ;
         }
     }
