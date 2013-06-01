@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'machine.h'
 **
-** Created: Wed May 8 04:20:27 2013
+** Created: Fri May 31 21:55:06 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,22 +23,27 @@ static const uint qt_meta_data_machine[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+       9,    8,    8,    8, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-       9,    8,    8,    8, 0x0a,
-      26,   22,    8,    8, 0x0a,
+      20,    8,    8,    8, 0x0a,
+      37,   33,    8,    8, 0x0a,
+      57,    8,    8,    8, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_machine[] = {
-    "machine\0\0ConnectBot()\0cmd\0ConnectBot(QString)\0"
+    "machine\0\0newframe()\0ConnectBot()\0cmd\0"
+    "ConnectBot(QString)\0settrackon(bool)\0"
 };
 
 void machine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -47,8 +52,10 @@ void machine::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         Q_ASSERT(staticMetaObject.cast(_o));
         machine *_t = static_cast<machine *>(_o);
         switch (_id) {
-        case 0: _t->ConnectBot(); break;
-        case 1: _t->ConnectBot((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 0: _t->newframe(); break;
+        case 1: _t->ConnectBot(); break;
+        case 2: _t->ConnectBot((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 3: _t->settrackon((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -86,10 +93,16 @@ int machine::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 4;
     }
     return _id;
+}
+
+// SIGNAL 0
+void machine::newframe()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, 0);
 }
 QT_END_MOC_NAMESPACE

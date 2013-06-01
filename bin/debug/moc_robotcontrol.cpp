@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'robotcontrol.h'
 **
-** Created: Wed May 8 04:20:22 2013
+** Created: Fri May 31 21:55:01 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_robotcontrol[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      53,   14, // methods
+      54,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -31,66 +31,68 @@ static const uint qt_meta_data_robotcontrol[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      14,   13,   13,   13, 0x08,
-      38,   13,   13,   13, 0x08,
-      60,   13,   13,   13, 0x08,
-      83,   13,   13,   13, 0x08,
-     120,   13,   13,   13, 0x08,
-     157,   13,   13,   13, 0x08,
-     194,   13,   13,   13, 0x08,
-     227,   13,   13,   13, 0x08,
-     260,   13,   13,   13, 0x08,
-     293,   13,   13,   13, 0x08,
-     326,   13,   13,   13, 0x08,
-     359,   13,   13,   13, 0x08,
-     392,   13,   13,   13, 0x08,
-     404,   13,   13,   13, 0x08,
-     419,   13,   13,   13, 0x08,
-     446,   13,   13,   13, 0x08,
-     473,   13,   13,   13, 0x08,
-     501,   13,   13,   13, 0x08,
-     521,   13,   13,   13, 0x08,
-     540,   13,   13,   13, 0x08,
-     560,   13,   13,   13, 0x08,
-     580,   13,   13,   13, 0x08,
-     604,   13,   13,   13, 0x08,
-     636,   13,   13,   13, 0x08,
-     658,   13,   13,   13, 0x08,
-     683,   13,   13,   13, 0x08,
-     709,   13,   13,   13, 0x08,
-     735,   13,   13,   13, 0x08,
-     756,   13,   13,   13, 0x08,
-     782,   13,   13,   13, 0x08,
-     805,   13,   13,   13, 0x08,
-     829,   13,   13,   13, 0x08,
-     859,  854,   13,   13, 0x08,
-     892,  854,   13,   13, 0x08,
-     925,  854,   13,   13, 0x08,
-     958,  854,   13,   13, 0x08,
-     991,  854,   13,   13, 0x08,
-    1024,  854,   13,   13, 0x08,
-    1057,  854,   13,   13, 0x08,
-    1093,   13,   13,   13, 0x08,
-    1105,   13,   13,   13, 0x08,
+      14,   13,   13,   13, 0x0a,
+      25,   13,   13,   13, 0x08,
+      49,   13,   13,   13, 0x08,
+      71,   13,   13,   13, 0x08,
+      94,   13,   13,   13, 0x08,
+     131,   13,   13,   13, 0x08,
+     168,   13,   13,   13, 0x08,
+     205,   13,   13,   13, 0x08,
+     238,   13,   13,   13, 0x08,
+     271,   13,   13,   13, 0x08,
+     304,   13,   13,   13, 0x08,
+     337,   13,   13,   13, 0x08,
+     370,   13,   13,   13, 0x08,
+     403,   13,   13,   13, 0x08,
+     415,   13,   13,   13, 0x08,
+     430,   13,   13,   13, 0x08,
+     457,   13,   13,   13, 0x08,
+     484,   13,   13,   13, 0x08,
+     512,   13,   13,   13, 0x08,
+     532,   13,   13,   13, 0x08,
+     551,   13,   13,   13, 0x08,
+     571,   13,   13,   13, 0x08,
+     591,   13,   13,   13, 0x08,
+     615,   13,   13,   13, 0x08,
+     647,   13,   13,   13, 0x08,
+     669,   13,   13,   13, 0x08,
+     694,   13,   13,   13, 0x08,
+     720,   13,   13,   13, 0x08,
+     746,   13,   13,   13, 0x08,
+     767,   13,   13,   13, 0x08,
+     793,   13,   13,   13, 0x08,
+     816,   13,   13,   13, 0x08,
+     840,   13,   13,   13, 0x08,
+     870,  865,   13,   13, 0x08,
+     903,  865,   13,   13, 0x08,
+     936,  865,   13,   13, 0x08,
+     969,  865,   13,   13, 0x08,
+    1002,  865,   13,   13, 0x08,
+    1035,  865,   13,   13, 0x08,
+    1068,  865,   13,   13, 0x08,
+    1104,   13,   13,   13, 0x08,
     1116,   13,   13,   13, 0x08,
-    1129,   13,   13,   13, 0x08,
-    1145,   13,   13,   13, 0x08,
-    1155,   13,   13,   13, 0x08,
-    1166,  854,   13,   13, 0x08,
-    1204,   13,   13,   13, 0x08,
-    1233,   13,   13,   13, 0x08,
-    1281, 1274,   13,   13, 0x08,
-    1313,  854,   13,   13, 0x08,
-    1345,  854,   13,   13, 0x08,
-    1394, 1388,   13,   13, 0x08,
-    1440, 1388,   13,   13, 0x08,
+    1127,   13,   13,   13, 0x08,
+    1140,   13,   13,   13, 0x08,
+    1156,   13,   13,   13, 0x08,
+    1166,   13,   13,   13, 0x08,
+    1177,  865,   13,   13, 0x08,
+    1215,   13,   13,   13, 0x08,
+    1244,   13,   13,   13, 0x08,
+    1292, 1285,   13,   13, 0x08,
+    1324,  865,   13,   13, 0x08,
+    1356,  865,   13,   13, 0x08,
+    1405, 1399,   13,   13, 0x08,
+    1451, 1399,   13,   13, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_robotcontrol[] = {
-    "robotcontrol\0\0on_btnConnect_clicked()\0"
-    "on_btnTrack_clicked()\0on_btnVision_clicked()\0"
+    "robotcontrol\0\0newframe()\0"
+    "on_btnConnect_clicked()\0on_btnTrack_clicked()\0"
+    "on_btnVision_clicked()\0"
     "on_doubleSpinBoxCP_editingFinished()\0"
     "on_doubleSpinBoxCI_editingFinished()\0"
     "on_doubleSpinBoxCD_editingFinished()\0"
@@ -139,59 +141,60 @@ void robotcontrol::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         Q_ASSERT(staticMetaObject.cast(_o));
         robotcontrol *_t = static_cast<robotcontrol *>(_o);
         switch (_id) {
-        case 0: _t->on_btnConnect_clicked(); break;
-        case 1: _t->on_btnTrack_clicked(); break;
-        case 2: _t->on_btnVision_clicked(); break;
-        case 3: _t->on_doubleSpinBoxCP_editingFinished(); break;
-        case 4: _t->on_doubleSpinBoxCI_editingFinished(); break;
-        case 5: _t->on_doubleSpinBoxCD_editingFinished(); break;
-        case 6: _t->on_spinBoxHMIN_editingFinished(); break;
-        case 7: _t->on_spinBoxSMIN_editingFinished(); break;
-        case 8: _t->on_spinBoxVMIN_editingFinished(); break;
-        case 9: _t->on_spinBoxHMAX_editingFinished(); break;
-        case 10: _t->on_spinBoxSMAX_editingFinished(); break;
-        case 11: _t->on_spinBoxVMAX_editingFinished(); break;
-        case 12: _t->UpdatePID(); break;
-        case 13: _t->UpdateThresh(); break;
-        case 14: _t->on_action_Save_triggered(); break;
-        case 15: _t->on_action_Open_triggered(); break;
-        case 16: _t->on_action_Close_triggered(); break;
-        case 17: _t->on_btnccw_clicked(); break;
-        case 18: _t->on_btncw_clicked(); break;
-        case 19: _t->on_btnfwd_clicked(); break;
-        case 20: _t->on_btnrev_clicked(); break;
-        case 21: _t->on_btnkillall_clicked(); break;
-        case 22: _t->on_spinBoxCam_editingFinished(); break;
-        case 23: _t->on_btnDance_clicked(); break;
-        case 24: _t->on_btnTiltLeft_clicked(); break;
-        case 25: _t->on_btnTiltRight_clicked(); break;
-        case 26: _t->on_pushTiltNone_clicked(); break;
-        case 27: _t->on_btnWave_clicked(); break;
-        case 28: _t->on_btnBellyFlop_clicked(); break;
-        case 29: _t->on_btncwNeck_clicked(); break;
-        case 30: _t->on_btnccwNeck_clicked(); break;
-        case 31: _t->on_ckbxPrepend_clicked(); break;
-        case 32: _t->on_spinBoxHMIN_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 33: _t->on_spinBoxSMIN_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 34: _t->on_spinBoxVMIN_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 35: _t->on_spinBoxHMAX_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 36: _t->on_spinBoxSMAX_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 37: _t->on_spinBoxVMAX_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 38: _t->on_spinBoxCam_valueChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
-        case 39: _t->visionoff(); break;
-        case 40: _t->visionon(); break;
-        case 41: _t->connectbot(); break;
-        case 42: _t->disconnectbot(); break;
-        case 43: _t->trackon(); break;
-        case 44: _t->trackoff(); break;
-        case 45: _t->on_spinBoxNecRotate_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 46: _t->on_centralWidget_destroyed(); break;
-        case 47: _t->on_lineEditTermCommand_editingFinished(); break;
-        case 48: _t->on_sldHmin_actionTriggered((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 49: _t->on_spinBoxCam_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 50: _t->on_doubleSpinBoxNoise_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 51: _t->on_comboBoxTrackType_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 52: _t->on_comboBoxTrackType_activated((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->newframe(); break;
+        case 1: _t->on_btnConnect_clicked(); break;
+        case 2: _t->on_btnTrack_clicked(); break;
+        case 3: _t->on_btnVision_clicked(); break;
+        case 4: _t->on_doubleSpinBoxCP_editingFinished(); break;
+        case 5: _t->on_doubleSpinBoxCI_editingFinished(); break;
+        case 6: _t->on_doubleSpinBoxCD_editingFinished(); break;
+        case 7: _t->on_spinBoxHMIN_editingFinished(); break;
+        case 8: _t->on_spinBoxSMIN_editingFinished(); break;
+        case 9: _t->on_spinBoxVMIN_editingFinished(); break;
+        case 10: _t->on_spinBoxHMAX_editingFinished(); break;
+        case 11: _t->on_spinBoxSMAX_editingFinished(); break;
+        case 12: _t->on_spinBoxVMAX_editingFinished(); break;
+        case 13: _t->UpdatePID(); break;
+        case 14: _t->UpdateThresh(); break;
+        case 15: _t->on_action_Save_triggered(); break;
+        case 16: _t->on_action_Open_triggered(); break;
+        case 17: _t->on_action_Close_triggered(); break;
+        case 18: _t->on_btnccw_clicked(); break;
+        case 19: _t->on_btncw_clicked(); break;
+        case 20: _t->on_btnfwd_clicked(); break;
+        case 21: _t->on_btnrev_clicked(); break;
+        case 22: _t->on_btnkillall_clicked(); break;
+        case 23: _t->on_spinBoxCam_editingFinished(); break;
+        case 24: _t->on_btnDance_clicked(); break;
+        case 25: _t->on_btnTiltLeft_clicked(); break;
+        case 26: _t->on_btnTiltRight_clicked(); break;
+        case 27: _t->on_pushTiltNone_clicked(); break;
+        case 28: _t->on_btnWave_clicked(); break;
+        case 29: _t->on_btnBellyFlop_clicked(); break;
+        case 30: _t->on_btncwNeck_clicked(); break;
+        case 31: _t->on_btnccwNeck_clicked(); break;
+        case 32: _t->on_ckbxPrepend_clicked(); break;
+        case 33: _t->on_spinBoxHMIN_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 34: _t->on_spinBoxSMIN_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 35: _t->on_spinBoxVMIN_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 36: _t->on_spinBoxHMAX_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 37: _t->on_spinBoxSMAX_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 38: _t->on_spinBoxVMAX_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 39: _t->on_spinBoxCam_valueChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 40: _t->visionoff(); break;
+        case 41: _t->visionon(); break;
+        case 42: _t->connectbot(); break;
+        case 43: _t->disconnectbot(); break;
+        case 44: _t->trackon(); break;
+        case 45: _t->trackoff(); break;
+        case 46: _t->on_spinBoxNecRotate_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 47: _t->on_centralWidget_destroyed(); break;
+        case 48: _t->on_lineEditTermCommand_editingFinished(); break;
+        case 49: _t->on_sldHmin_actionTriggered((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 50: _t->on_spinBoxCam_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 51: _t->on_doubleSpinBoxNoise_valueChanged((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 52: _t->on_comboBoxTrackType_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 53: _t->on_comboBoxTrackType_activated((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -229,9 +232,9 @@ int robotcontrol::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 53)
+        if (_id < 54)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 53;
+        _id -= 54;
     }
     return _id;
 }
