@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SETTINGS>
+    <cp>-0.02</cp>
+    <ci>-2e-08</ci>
+    <cd>-2</cd>
+    <hmin>60</hmin>
+    <hmax>112</hmax>
+    <smin>73</smin>
+    <smax>255</smax>
+    <vmin>141</vmin>
+    <vmax>235</vmax>
+    <term>gnome-terminal -x</term>
+    <cam>1</cam>
+</SETTINGS>
